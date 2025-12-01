@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Browse Our Products - BulkHub</title>
     <style>
-        body 
+        body
         {
             margin: 0;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -14,9 +14,8 @@
             background-size: cover;
             color: white;
         }
-        
-        
-        .toptext 
+
+        .toptext
         {
             width: 100%;
             text-align: center;
@@ -24,16 +23,15 @@
             color: #ffffffd0;
             padding: 10px 0;
         }
-        
-        
-        .topbuttons 
+
+        .topbuttons
         {
             position: absolute;
             right: 50px;
             top: 20px;
         }
 
-        .topbuttons button 
+        .topbuttons button
         {
             padding: 10px 25px;
             margin-left: 15px;
@@ -45,8 +43,8 @@
             border: none;
             cursor: pointer;
         }
-        
-        .logo 
+
+        .logo
         {
             height: 40px;
             width: 40px;
@@ -62,8 +60,8 @@
             align-items: center;
             font-weight: bold;
         }
-        
-        .title 
+
+        .title
         {
             margin-top: 60px;
             text-align: center;
@@ -71,9 +69,7 @@
             font-weight: 600;
             letter-spacing: 2px;
         }
-        
-        
-        
+
         .sort
         {
             display: flex;
@@ -81,8 +77,8 @@
             margin: 30px 200px;
             align-items: center;
         }
-        
-        .box 
+
+        .box
         {
             display: flex;
             align-items: center;
@@ -91,10 +87,9 @@
             padding: 10px 20px;
             width: 300px;
         }
-        
-        
-        
-        .box input {
+
+        .box input
+        {
             background: transparent;
             border: none;
             color: rgb(3, 2, 2);
@@ -103,14 +98,14 @@
             margin-left: 10px;
             font-weight: bold;
         }
-        
-        .box input::placeholder 
+
+        .box input::placeholder
         {
             color: rgba(15, 11, 11, 0.9);
             font-weight: bold;
         }
-        
-        .sortoptions 
+
+        .sortoptions
         {
             display: flex;
             gap: 20px;
@@ -118,8 +113,8 @@
             color: white;
             font-weight: bold;
         }
-        
-        .sortoptions select 
+
+        .sortoptions select
         {
             padding: 10px 15px;
             border-radius: 20px;
@@ -129,17 +124,16 @@
             font-size: 16px;
             font-weight: bold;
         }
-        
-        
-        .Listings 
+
+        .Listings
         {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 30px;
             margin: 0 200px;
         }
-        
-        .productcard 
+
+        .productcard
         {
             background: rgba(255,255,255,0.08);
             border-radius: 20px;
@@ -149,13 +143,13 @@
             display: flex;
             flex-direction: column;
         }
-        
-        .productcard:hover 
+
+        .productcard:hover
         {
             transform: translateY(-5px);
         }
-        
-        .productimage 
+
+        .productimage
         {
             width: 100%;
             height: 200px;
@@ -163,40 +157,38 @@
             border-radius: 15px;
             margin-bottom: 20px;
         }
-        
-        .productname 
+
+        .productname
         {
             font-size: 22px;
             margin-bottom: 10px;
             font-weight: bold;
             color: white;
         }
-        
-        .productprice 
+
+        .productprice
         {
             font-size: 20px;
             color: white;
             margin-bottom: 10px;
             font-weight: bold;
         }
-        
-        .productrating 
+
+        .productrating
         {
             font-size: 16px;
             color: #FFD700;
             margin-bottom: 10px;
         }
-        
-        .productdescription 
+
+        .productdescription
         {
             font-size: 16px;
             line-height: 1.4;
             color: rgba(255,255,255,0.8);
             flex-grow: 1;
         }
-        
-       
-        footer 
+        footer
         {
             margin-top: 40px;
             display: flex;
@@ -204,17 +196,17 @@
             background: rgba(255,255,255,0.05);
             padding: 30px 0;
         }
-        
-        footer h3 
+
+        footer h3
         {
             margin-bottom: 15px;
             border-bottom: 1px solid white;
             padding-bottom: 5px;
             font-size: 20px;
-            color: white;
+            coLor: white;
         }
-        
-        footer p 
+
+        footer p
         {
             margin: 6px 0;
             font-size: 14px;
@@ -222,58 +214,57 @@
             text-decoration: none;
             display: block;
         }
-        
-        .social 
+
+        .social
         {
             display: flex;
             flex-direction: column;
             gap: 10px;
         }
-        
-        .social p 
+
+        .social p
         {
             display: flex;
             align-items: center;
             gap: 10px;
             color: white;
         }
-        
-        .social img 
+
+        .social img
         {
             width: 20px;
             height: 20px;
         }
-        
-        .etext {
+
+        .etext
+        {
             color: white;
             font-weight: normal;
         }
+
     </style>
 </head>
 <body>
+
     <div class="toptext">
         Fresh products | Beverages | Dairy items
     </div>
-    
+
     <div class="topbuttons">
         <button>LOGIN</button>
         <button>CONTACT</button>
         <button>ABOUT US</button>
     </div>
-    
     <div class="logo">
-        BH
+    BH
     </div>
-    
+
     <div class="title">Browse Our Products</div>
-    
-    
     <div class="sort">
         <div class="box">
-            <span>🔍</span>
             <input type="text" placeholder="SEARCH">
         </div>
-        
+
         <div class="sortoptions">
             <span>SORT BY:</span>
             <select>
@@ -281,7 +272,6 @@
                 <option>Name</option>
                 <option>Rating</option>
             </select>
-            
             <span>VIEW:</span>
             <select>
                 <option>Fresh Products</option>
@@ -291,7 +281,7 @@
             </select>
         </div>
     </div>
-    
+
     <div class="Listings">
         <div class="productcard">
             <img src="FP.png" class="productimage">
@@ -299,40 +289,40 @@
             <div class="productprice">3$/KG</div>
             <div class="productrating">★★★★</div>
             <div class="productdescription etext">
-                small, fresh, and flavorful tomatoes, ideal for salads, smoking, and everyday cooking.
+            small, fresh, and flavorful tomatoes, ideal for salads, smoking, and everyday cooking.
             </div>
         </div>
-        
+
         <div class="productcard">
             <img src="FM.png" class="productimage">
             <div class="productname">Fresh Milk</div>
             <div class="productprice">2$/L</div>
             <div class="productrating">★★★★★</div>
             <div class="productdescription etext">
-                straight, fresh food, fumes, delivering creamy, wholesome goodness packed with nutrients.
+            straight, fresh food, fumes, delivering creamy, wholesome goodness packed with nutrients.
             </div>
         </div>
-        
+
         <div class="productcard">
             <img src="FE.png" class="productimage">
             <div class="productname">Fresh Eggs</div>
             <div class="productprice">20$/KG</div>
             <div class="productrating">★★★★</div>
             <div class="productdescription etext">
-                fresh, eligant and straight from farm to table.
+            fresh, eligant and straight from farm to table.
             </div>
         </div>
-        
+
         <div class="productcard">
             <img src="CB.png" class="productimage">
             <div class="productname">Coffee Beans</div>
             <div class="productprice">20$/KG</div>
             <div class="productrating">★★★★★</div>
             <div class="productdescription etext">
-                roasted, aromatic, and full of rich flavor.
+            roasted, aromatic, and full of rich flavor.
             </div>
         </div>
-        
+
         <div class="productcard">
             <img src="OO.png" class="productimage">
             <div class="productname">Olive Oil</div>
@@ -342,39 +332,41 @@
                 Rich, smooth, and perfect for cooking or drizzling on salads.
             </div>
         </div>
-        
+
         <div class="productcard">
             <img src="TL.png" class="productimage">
             <div class="productname">Tea Leaves</div>
             <div class="productprice">9$/KG</div>
             <div class="productrating">★★★★</div>
             <div class="productdescription etext">
-                handpicked and gently dried for a fresh, soothing brew.
+            handpicked and gently dried for a fresh, soothing brew.
             </div>
         </div>
-        
+
         <div class="productcard">
             <img src="CL.png" class="productimage">
             <div class="productname">Cheese Blocks</div>
             <div class="productprice">10$/KG</div>
             <div class="productrating">★★★★★</div>
             <div class="productdescription etext">
-                crafted from fresh milk, naturally rich and ready to delight.
+             crafted from fresh milk, naturally rich and ready to delight.
             </div>
+
         </div>
-        
+
         <div class="productcard">
             <img src="B.png" class="productimage">
             <div class="productname">Butter</div>
             <div class="productprice">7$/KG</div>
             <div class="productrating">★★★★</div>
             <div class="productdescription etext">
-                clumsed from rich cream for a smooth, golden finish.
+            clumsed from rich cream for a smooth, golden finish.
             </div>
         </div>
     </div>
-    
+
     <footer>
+
         <div>
             <h3>EXPLORE:</h3>
             <p>ABOUT US</p>
@@ -383,14 +375,14 @@
             <p>.</p>
             <p>RETURN POLICY</p>
         </div>
-        
+
         <div>
             <h3>SUPPORT:</h3>
             <p>FAQS</p>
             <p>.</p>
             <p>PRIVACY POLICY</p>
         </div>
-        
+
         <div>
             <h3>CONTACT INFORMATION:</h3>
             <p>EMAIL: SUPPORT@BULKHUB.COM.PK</p>
@@ -403,14 +395,14 @@
         <div>
             <h3>CONNECT WITH US</h3>
             <div class="social">
-                <p href="https://facebook.com/BulkHubOfficial"> 
+                <p href="https://facebook.com/BulkHubOfficial">
                 <img src="fb.png"> @BulkHubOfficial </p>
-                <p href="https://instagram.com/bulkhub_pk"> 
-                <img src="in.png"> @bulkhub_pk </p> 
-                <p href="https://twitter.com/bulkhub" target="_blank"> 
-                <img src="x.png" > @bulkhub </p> 
-                <p href="https://linkedin.com/company/BulkHubPtyLtd"> 
-                <img src="link.png"> BulkHub Pty Ltd </p> 
+                <p href="https://instagram.com/bulkhub_pk">
+                <img src="in.png"> @bulkhub_pk </p>
+                <p href="https://twitter.com/bulkhub" target="_blank">
+                <img src="x.png" > @bulkhub </p>
+                <p href="https://linkedin.com/company/BulkHubPtyLtd">
+                <img src="link.png"> BulkHub Pty Ltd </p>
             </div>
         </div>
     </footer>
