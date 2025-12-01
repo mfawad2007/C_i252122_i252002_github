@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coffee Beans Product Page</title>
+</head>
+<body style="margin:0; padding:0; font-family: 'Times New Roman', serif;  background: url('bg img.png')no-repeat center fixed ;background-size: cover; 
+             background-color: white; ;
+             color: white; 
+             line-height: 1.6;">
+
+    <!-- TOP HEADER BAR (Logo, Nav Links, Cart, Wishlist, Login) -->
+    <div style="display: flex; justify-content: space-between; align-items: center; 
+                padding: 10px 40px; background-color: transparent;">
+        
+        <!-- Left Section: Logo & Secondary Links -->
+        <div style="display: flex; align-items: center;">
+            <div style="height:40px;width:40px;
+        border-radius: 50%;
+        background: rgb(190, 189, 189);
+        border: 1px solid black;
+        position: absolute; top: 20px;left:40px;
+        
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;">>
+                BH
+            </div>
+            <div style="font-size: 16px; letter-spacing: 2px; color: #d0c1e0; opacity: 0.8;position: absolute;left:100px">
+                Fresh products | Beverages | Dairy items
+            </div>
+        </div>
+        
+        <!-- Right Section: Cart Icon, Wishlist Icon & Login Button -->
+        <div style="display: flex; align-items: center;">
+            <!-- Wishlist Icon (New) -->
+            <span style="font-size: 24px; margin-right: 10px; cursor: pointer;">
+                🤍
+            </span>
+            <!-- Shopping Cart Icon -->
+            <span style="font-size: 24px; margin-right: 20px; cursor: pointer;">
+                🛒
+            </span>
+            <!-- Login Button -->
+            <button style="padding: 10px 25px; background-color: rgba(0, 0, 0, 0.35); 
+                           color: rgb(133,137,141); border: none; border-radius: 20px; cursor: pointer;
+                           font-size: 18px; font-weight: bold; text-transform: uppercase; position:relative;right:10px;">
+                LOGIN
+            </button>
+        </div>
+    </div>
+
+    <!-- MAIN NAVIGATION BAR (With Separators) -->
+    <div style="display: flex; justify-content: center; padding: 15px 0; background-color: transparent; border-bottom: none;">
+        <a href="#" style="color: white; text-decoration: none; margin: 0 15px; font-size: 16px; font-weight: 500;">
+            HOME
+        </a>
+        <span style="color: white;">|</span>
+        <a href="#" style="color: white; text-decoration: none; margin: 0 15px; font-size: 16px; font-weight: 500;">
+            PRODUCTS
+        </a>
+        <span style="color: white;">|</span>
+        <a href="#" style="color: white; text-decoration: none; margin: 0 15px; font-size: 16px; font-weight: 500;">
+            CONTACT
+        </a>
+        <span style="color: white;">|</span>
+        <a href="#" style="color: white; text-decoration: none; margin: 0 15px; font-size: 16px; font-weight: 500;">
+            ABOUT US
+        </a>
+    </div>
+
+    <!-- MAIN PRODUCT CONTENT LAYOUT -->
+    <div style="display: flex; max-width: 1200px; margin: 30px auto; padding: 0 40px; color: #e0e0e0;">
+
+        <!-- LEFT COLUMN: Search & Images -->
+        <div style="width: 45%; margin-right: 5%;">
+            
+            <!-- Search Bar -->
+            <div style="display: flex; align-items: center; background-color: rgba(255, 255, 255, 0.1); 
+                        border-radius: 25px; padding: 5px 15px; margin-bottom: 30px; width: 80%;">
+                <span style="font-size: 18px; margin-right: 10px;">🔍</span>
+                <input type="text" value="SEARCH" style="flex-grow: 1; background: transparent; 
+                       border: none; color: white; padding: 10px 0; font-size: 16px; 
+                       text-transform: uppercase; outline: none;">
+            </div>
+            
+            <!-- Main Product Image -->
+            <div style="height: 300px; overflow: hidden; border-radius: 10px; margin-bottom: 10px;">
+                <img src="coffee1.png" 
+                     alt="Coffee Beans Roasting" 
+                     style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+
+            <!-- Thumbnail Images -->
+            <div style="display: flex; justify-content: space-between;">
+                <div style="width: 48%; height: 150px; overflow: hidden; border-radius: 10px;">
+                    <img src="cofee2.png" 
+                         alt="Spoon of Coffee Beans" 
+                         style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div style="width: 48%; height: 150px; overflow: hidden; border-radius: 10px;">
+                    <img src="coffee3.png" 
+                         alt="Sacks of Coffee Beans" 
+                         style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT COLUMN: Details & Purchase -->
+        <div style="width: 50%; padding-left: 5%;">
+            
+            <!-- Product Title -->
+            <h1 style="font-size: 48px; font-weight: 300; margin-top: 0; margin-bottom: 10px; font-family: cursive;">
+                COFFEE BEANS
+            </h1>
+            <!-- Sub-heading color is black -->
+            <h2 style="font-size: 24px; font-weight: normal; margin-top: 0; margin-bottom: 20px; color: black;">
+                Premium Roasted Coffee Beans
+            </h2>
+
+            <!-- Price & Stock - Colors changed to white -->
+            <div style="display: flex; align-items: center; margin-bottom: 20px; font-size: 18px;">
+                <span style="font-size: 28px; font-weight: bold; color: white; margin-right: 15px;">
+  $20.00
+</span>
+<span style="color: white;">
+ In Stock
+ </span>
+</div>
+
+            <!-- Description -->
+<p style="font-size: 16px; color: #b7a4ca; margin-bottom: 30px;">
+ Our coffee beans are carefully sourced from the best plantations to ensure top-quality flavor and aroma. We take pride in offering beans that are rich, fresh, and roasted to perfection—the kind coffee lovers crave.
+ </p>
+
+            <!-- Quantity Selector & Action Buttons CONTAINER -->
+ <div style="display: flex; align-items: flex-start; margin-bottom: 40px;">
+<span style="font-size: 18px; margin-right: 15px; margin-top: 10px;">Quantity</span>
+                
+                <!-- Quantity Input (Simulated) -->
+<div style="display: flex; align-items: center; border: 1px solid white; border-radius: 5px; background-color: rgba(255, 255, 255, 0.1); margin-right: 40px;">
+ <input type="number" value="1" min="1" style="width: 40px; padding: 5px; background: transparent; 
+border: none; color: white; text-align: center; font-size: 18px; outline: none;">
+<span style="padding: 5px; border-left: 1px solid white; color: white;">▼</span>
+        </div>            
+ <!-- Buttons Stacked - Now with fixed width for equal size -->
+  <div style="display: flex; flex-direction: column; align-items: flex-end;">
+<!-- Add to Cart Button -->
+<button style="padding: 12px 25px; width: 180px; /* Fixed Width */ background-color: rgba(255, 255, 255, 0.7);
+color: black; border: none; border-radius: 25px; cursor: pointer; 
+  font-size: 16px; font-weight: bold; margin-bottom: 10px;">
+Add to Cart
+ </button>
+                    
+    <!-- Add to Wishlist Button -->
+ <button style="padding: 12px 25px; width: 180px; /* Fixed Width */ background-color: rgba(255, 255, 255, 0.7); 
+      color: black; border: none; border-radius: 25px; cursor: pointer; 
+  font-size: 16px; font-weight: bold;">
+  Add to Wishlist
+</button>
+ </div>
+</div>
+            
+</div>
+</div>
+<footer style="margin-top: 10px; display: flex; justify-content: space-around; background: rgba(255,255,255,0.05); padding: 30px 0; color: #E0E0E0;"> 
+        
+        <!-- Explore Column --><div style="width: 20%;"> 
+            <h3 style="margin-bottom: 15px; border-bottom: 1px solid white; padding-bottom: 5px; font-size: 20px; color: white;">Explore:</h3> 
+            <a href="#" style="margin: 6px 0; font-size: 14px; color: white; text-decoration: none; display: block;">About Us</a> 
+            <a href="#" style="margin: 6px 0; font-size: 14px; color: white; text-decoration: none; display: block;">Terms & Conditions</a> 
+            <a href="#" style="margin: 6px 0; font-size: 14px; color: white; text-decoration: none; display: block;">Return Policy</a>
+        </div> 
+        
+        <!-- Support Column --><div style="width: 20%;"> 
+            <h3 style="margin-bottom: 15px; border-bottom: 1px solid white; padding-bottom: 5px; font-size: 20px; color: white;">Support:</h3> 
+            <a href="#" style="margin: 6px 0; font-size: 14px; color: white; text-decoration: none; display: block;">FAQS</a> 
+            <a href="#" style="margin: 6px 0; font-size: 14px; color: white; text-decoration: none; display: block;">Privacy Policy</a> 
+        </div> 
+        
+        <!-- Contact Information Column --><div style="width: 30%;"> 
+            <h3 style="margin-bottom: 15px; border-bottom: 1px solid white; padding-bottom: 5px; font-size: 20px; color: white;">Contact Information:</h3> 
+            <p style="margin: 6px 0; font-size: 14px; color: white; text-decoration: none; display: block;">Email: support@bulkhub.com.pk</p> 
+            <p style="margin: 6px 0; font-size: 14px; color: white; text-decoration: none; display: block;">Phone: +92 323 5400827</p> 
+            <p style="margin: 6px 0; font-size: 14px; color: white; text-decoration: none; display: block;">Address: BulkHub Headquarters 45 Supply Lane, Industrial District, Hattar, Pakistan</p> 
+        </div>
+
+        <!-- Connect With Us Column --><div style="width: 25%;"> 
+            <h3 style="margin-bottom: 15px; border-bottom: 1px solid white; padding-bottom: 5px; font-size: 20px; color: white;">Connect With Us ✔</h3> 
+            <!-- Social links use flex-direction: column for vertical stacking within the column -->
+            <!-- UPDATED TO USE IMG TAGS FOR SOCIAL ICONS -->
+            <div style="display: flex; flex-direction: column; gap: 10px;"> 
+                
+                <p style="display: flex; align-items: center; gap: 10px; margin: 0; font-size: 14px;"> 
+                    <!-- Replace the src URL below with your actual Facebook icon image URL -->
+                    <img src="fb.png" alt="Facebook Icon" style="width: 24px; height: 24px; border-radius: 4px; object-fit: cover;"/> @BulkHubOfficial 
+                </p>
+                <p style="display: flex; align-items: center; gap: 10px; margin: 0; font-size: 14px;"> 
+                    <!-- Replace the src URL below with your actual Instagram icon image URL -->
+                    <img src="lk.png" alt="Instagram Icon" style="width: 24px; height: 24px; border-radius: 4px; object-fit: cover;"/> @bulkhub_pk 
+                </p> 
+                <p style="display: flex; align-items: center; gap: 10px; margin: 0; font-size: 14px;"> 
+                    <!-- Replace the src URL below with your actual Twitter icon image URL -->
+                    <img src="twitter.png" alt="Twitter Icon" style="width: 24px; height: 24px; border-radius: 4px; object-fit: cover;"/> @bulkhub 
+                </p> 
+                <p style="display: flex; align-items: center; gap: 10px; margin: 0; font-size: 14px;"> 
+                    <!-- Replace the src URL below with your actual LinkedIn icon image URL -->
+                    <img src="insta.png"LinkedIn Icon style="width: 24px; height: 24px; border-radius: 4px; object-fit: cover;"/> BulkHub Pty Ltd 
+                </p> 
+            </div> 
+        </div> 
+    </footer>
+</body>
+</html>
