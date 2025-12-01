@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - BulkHub</title>
+    <style>
+        body
+        {
+            margin: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background: url('img12.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .toptext
+        {
+            width: 100%;
+            text-align: center;
+            font-size: 26px;
+            color: #ffffffd0;
+            padding: 10px 0;
+        }
+
+        .topbuttons
+        {
+            position: absolute;
+            right: 50px;
+            top: 20px;
+        }
+
+        .topbuttons button
+        {
+            padding: 10px 25px;
+            margin-left: 15px;
+            border-radius: 20px;
+            font-size: 18px;
+            font-weight: normal;
+            background: #000000;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .logo
+        {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background: white;
+            border: 1px solid black;
+            position: absolute;
+            left: 100px;
+            top: 10px;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .title
+        {
+            margin-top: 80px;
+            text-align: center;
+            font-size: 55px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-bottom: 40px;
+        }
+
+        .contact-container
+        {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            padding: 0 100px;
+            margin-bottom: 40px;
+        }
+
+        .contact-form
+        {
+            flex: 1;
+            background: rgba(255,255,255,0.08);
+            border-radius: 20px;
+            padding: 30px;
+        }
+
+        .contact-info
+        {
+            flex: 1;
+            background: rgba(255,255,255,0.08);
+            border-radius: 20px;
+            padding: 30px;
+        }
+
+        .form-group
+        {
+            margin-bottom: 25px;
+        }
+
+        .form-group label
+        {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 18px;
+            color: white;
+        }
+
+        .form-group input,
+        .form-group textarea
+        {
+            width: 100%;
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+            background: rgba(255,255,255,0.1);
+            color: white;
+            font-size: 16px;
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder
+        {
+            color: rgba(255,255,255,0.6);
+        }
+
+        .form-group textarea
+        {
+            height: 150px;
+            resize: vertical;
+        }
+
+        .submit-btn
+        {
+            padding: 15px 40px;
+            background: #000000;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 18px;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .submit-btn:hover
+        {
+            background: #333333;
+        }
+
+        .contact-info h2,
+        .contact-form h2
+        {
+            margin-bottom: 25px;
+            border-bottom: 1px solid white;
+            padding-bottom: 10px;
+            font-size: 24px;
+        }
+
+        .contact-details
+        {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact-details li
+        {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .contact-details strong
+        {
+            font-size: 18px;
+            color: white;
+        }
+
+        .contact-details p
+        {
+            margin: 5px 0 0 0;
+            font-size: 16px;
+            color: rgba(255,255,255,0.9);
+        }
+
+        .faq-section
+        {
+            background: rgba(255,255,255,0.08);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 0 100px 40px 100px;
+        }
+
+        .faq-item
+        {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 10px;
+        }
+
+        .faq-q
+        {
+            font-weight: bold;
+            font-size: 18px;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .faq-a
+        {
+            color: rgba(255,255,255,0.9);
+            line-height: 1.5;
+        }
+
+        footer
+        {
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-around;
+            background: rgba(255,255,255,0.05);
+            padding: 30px 0;
+        }
+
+        footer h3
+        {
+            margin-bottom: 15px;
+            border-bottom: 1px solid white;
+            padding-bottom: 5px;
+            font-size: 20px;
+            color: white;
+        }
+
+        footer p
+        {
+            margin: 6px 0;
+            font-size: 14px;
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+
+        .social
+        {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .social p
+        {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+        }
+
+        .social img
+        {
+            width: 20px;
+            height: 20px;
+        }
+
+        .etext
+        {
+            color: white;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="toptext">
+        Fresh products | Beverages | Dairy items
+    </div>
+
+    <div class="topbuttons">
+        <button>LOGIN</button>
+        <button>CONTACT</button>
+        <button>ABOUT US</button>
+    </div>
+    <div class="logo">
+        BH
+    </div>
+
+    <div class="title">Contact Us</div>
+
+    <div class="contact-container">
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <ul class="contact-details">
+                <li>
+                    <strong>Email:</strong>
+                    <p>support@bulkHub.com.pl</p>
+                </li>
+                <li>
+                    <strong>Phone:</strong>
+                    <p>+93 323 5400827</p>
+                </li>
+                <li>
+                    <strong>Address:</strong>
+                    <p>BulkHub Headquarters 45 Supply Lane, Industrial District, Harter, Pakistan</p>
+                </li>
+                <li>
+                    <strong>Live Chat:</strong>
+                    <p>Available Monday—Friday 9 AM–6 PM</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="faq-section">
+        <h2>Frequently Asked Questions (FAQ)</h2>
+        
+        <div class="faq-item">
+            <div class="faq-q">Q1: How do I place a bulk order?</div>
+            <div class="faq-a">You can place an order by logging in, browsing categories, and adding items to your cart. Then confirm your order at checkout.</div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-q">Q2: What payment methods do you accept?</div>
+            <div class="faq-a">Bulletin accepts credit/debit cards, PayPal, and bank transfers for verified business accounts.</div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-q">Q3: How long does delivery take?</div>
+            <div class="faq-a">Deliveries usually arrive within 2–3 business days, depending on your location and product availability.</div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-q">Q4: Can I track my order?</div>
+            <div class="faq-a">Once your order is confirmed, you'll receive a tracking link via email and can monitor delivery in real time.</div>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <h3>EXPLORE:</h3>
+            <p>ABOUT US</p>
+            <p>.</p>
+            <p>TERMS & CONDITIONS</p>
+            <p>.</p>
+            <p>RETURN POLICY</p>
+        </div>
+
+        <div>
+            <h3>SUPPORT:</h3>
+            <p>FAQS</p>
+            <p>.</p>
+            <p>PRIVACY POLICY</p>
+        </div>
+
+        <div>
+            <h3>CONTACT INFORMATION:</h3>
+            <p>EMAIL: SUPPORT@BULKHUB.COM.PK</p>
+            <p>.</p>
+            <p>PHONE: +92 323 54000827</p>
+            <p>.</p>
+            <p>ADDRESS: BULKHUB HEADQUARTERS 45 SUPPLY LANE, INDUSTRIAL DISTRICT, HARTAR, PAKISTAN</p>
+        </div>
+
+        <div>
+            <h3>CONNECT WITH US</h3>
+            <div class="social">
+                <p>
+                    <img src="fb.png"> @BulkHubOfficial
+                </p>
+                <p>
+                    <img src="in.png"> @bulkhub_pk
+                </p>
+                <p>
+                    <img src="x.png"> @bulkhub
+                </p>
+                <p>
+                    <img src="link.png"> BulkHub Pty Ltd
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
